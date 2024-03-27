@@ -1,0 +1,22 @@
+{% extends "imageai/base.html" %}
+{% block title %}ゴリラ・サル・チンパンジー推定結果{% endblock %}
+
+{% block content %}
+<div class="result">
+  <h4 class="mt-4 mb-5 boder-bottom">画像推定結果</h4>
+  <table class="table">
+      <p class="body-wrapper">ファイル名:{{photo_name}}</p>
+
+      <h2>画像ファイル<h2>
+      <img class="preview-img" src={{photo_data}}></img>
+
+      <p>動物名:{{predicted}}</p>
+      <p>推定確率:{{percentage}} %</p>
+
+  </table>
+  <br>
+
+  <a href="{% url 'imageai:index' %}" class="btn btn-primary btn-lg btn-block">選択メニューに戻る</a>
+
+</div>
+{% endblock %}

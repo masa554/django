@@ -1,0 +1,60 @@
+.navber-brand{
+    font-size:40px;
+    opacity:0.8;
+    width:100%;
+  }
+  
+  .title-method{
+    margin:0 160px;
+  }
+  
+  .container{
+    width:100%;
+    text-align:center;
+  }
+  .alert {
+    background-image:url("./image/background-image.jpg");
+    background-size: cover;
+    padding:150px 50px;
+    height:50%;
+    width:100%;
+  }
+  
+  .boder-top{
+    font-size:50px;
+    border-bottom:1px solid white;
+    color:red;
+    opacity:0.6;
+    text-align:center;
+  }
+  
+  .custom-class {
+    font-size:30px;
+    opacity:0.9;
+  }
+  
+  .btn-wrapper{
+    padding: 8px 24px;
+  }
+  
+  .btn:hover{
+    background-color:red;
+  }
+  
+  
+  .boder-bottom{
+    font-size:50px;
+    border-bottom:1px solid black;
+    color:red;
+    opacity:0.7;
+    text-align:center;
+  }
+  
+  .body-wrapper {
+      font-size:30px;
+  }
+  
+  .preview-img {
+    width:300px;
+    height:300px;
+  }

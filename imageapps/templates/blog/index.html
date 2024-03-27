@@ -1,0 +1,28 @@
+{% extends "imageai/base.html" %}
+{% block title %}画像判定アプリケーション{% endblock %}
+
+{% block content %}
+<div class="alert">
+    <td><h1 class="mt-4 mb-5 boder-top">画像推定フォーム</h1></td>
+  <br>
+  <p class="custom-class">画像ファイルを選択して推定ボタンを押してください。</p>
+  <br>
+  <form action="{% url 'imageai:predict' %}"  method="post" class="form" enctype="multipart/form-data">
+  {% csrf_token %}
+  <div class="form-group">
+    <div class="custom-file">
+      {{ form.image }}
+      <label class="custom-file-label" for="customFile">
+        推定したいファイルを選択してください。
+      </label>
+    </div>
+  </div>
+  <br>
+  <div class="btn-wrapper">
+  <button type="submit" class="btn btn-secondary btn-lg btn-block">推定スタート!</button>
+  </div>
+  </form>
+</div>
+<br></br>
+
+{% endblock %}
