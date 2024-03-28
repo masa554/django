@@ -1,9 +1,9 @@
 {% extends "imageai/base.html" %}
-{% block title %}ゴリラ・サル・チンパンジー推定結果{% endblock %}
+{% block title %}？？？？結果{% endblock %}
 
 {% block content %}
 <div class="result">
-  <h4 class="mt-4 mb-5 boder-bottom">画像推定結果</h4>
+  <h4 class="mt-4 mb-5 boder-bottom">画像認識結果</h4>
   <table class="table">
       <p class="body-wrapper">ファイル名:{{photo_name}}</p>
 
@@ -11,7 +11,7 @@
       <img class="preview-img" src={{photo_data}}></img>
 
       <p>動物名:{{predicted}}</p>
-      <p>推定確率:{{percentage}} %</p>
+      <p>確率:{{percentage}} %</p>
 
   </table>
   <br>
